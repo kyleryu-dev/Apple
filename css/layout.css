@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+body {
+  width: 4400px;
+}
+
+#wrap {
+  width: 2560px;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 44px;
+  background: rgba(0,0,0,0.8);
+}
+
+#innerHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 996px;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  /* outline: 1px dotted red; */
+}
+
+#nav {
+  font-size: 12px;
+  font-weight: bold;
+  width: 600px;
+  height: 100%;
+  line-height: 44px;
+  /* outline: 1px dotted red; */
+}
+
+#logo {
+  position: absolute;
+  left: 150px;
+  line-height: 44px;
+  font-size: 20px;
+  color: #fff;
+}
+
+#main_nav {
+  display: flex;
+  color: #fff;
+}
+
+#main_nav>li {
+  width: 25%;
+}
+
+#main_nav a {
+  display: block;
+}
+
+.sub_nav {
+  color: #fff;
+  background: rgba(0,0,0,0.8);
+}
+
+/* Menu Default */
+.sub_nav {
+  display: none;
+}
+
+/* slider */
+#slider_wrap {
+  position: relative;
+  width: 300vw; /* need 100vw */
+  margin: auto;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+#slider {
+  display: flex;
+  width: 300vw;
+  margin: auto;
+  text-align: center;
+  transition: transform 2s;
+}
+
+#slider img {
+  width: 100%;
+}
+
+#slide_01 {
+  width: 100vw;
+}
+
+#slide_02 {
+  width: 100vw;
+}
+
+#slide_03 {
+  width: 100vw;
+}
+
+#button_box {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 9999;
+}
+
+.btn_layout {
+  padding: 15px;
+  border: none;
+  color: #fff;
+  background: rgba(0,0,0,0.8);
+}
+
+.btn_layout:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+/* banner */
+#banner {
+  margin: 15px;
+  width: 100vw;
+  display: grid;
+  gap: 15px 15px;
+  grid-template-areas:
+    "banner_01 banner_02"
+    "banner_03 banner_04";
+  place-items: center;
+  place-content: center;
+}
+
+.banner_default {
+  width: 50vw;
+  max-width: 600px;
+  height: 400px;
+  background-color: #fbfbfd;
+}
+
+#banner_01 {
+  grid-area: banner_01;
+}
+
+#banner_02 {
+  grid-area: banner_02;
+}
+
+#banner_03 {
+  grid-area: banner_03;
+}
+
+#banner_04 {
+  grid-area: banner_04;
+}
